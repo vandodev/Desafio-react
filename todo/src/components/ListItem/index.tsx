@@ -9,7 +9,7 @@ type Props = {
 export const ListItem = ({ item }: Props) => {
   const [isCheked, setIsCheked] = useState(item.done);
   return (
-    <C.Container>
+    <C.Container done={isCheked}>
       <input
         type="checkbox"
         checked={isCheked}
